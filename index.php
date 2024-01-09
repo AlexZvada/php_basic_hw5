@@ -11,13 +11,13 @@ var_dump(square(7));
 
 
 $number = 5;
-function customPow(int|float $number)
+function customPow(int|float $number): int|float
 {
     return $number *= $number;
 }
 ;
 
-function customPow2(int|float &$number)
+function customPow2(int|float &$number): int|float
 {
     return $number *= $number;
 }
